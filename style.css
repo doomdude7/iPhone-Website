@@ -281,7 +281,7 @@ a {
 }
 .phone-video {
   position: absolute;
-  bottom: -50vh;
+  bottom: -40vh;
   left: 40%;
   z-index: 2;
   transform: scale(0.75) translate(-40%, 0%);

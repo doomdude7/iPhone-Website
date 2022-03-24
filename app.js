@@ -102,7 +102,7 @@ const tlVideo = gsap.timeline({
   scrollTrigger: {
     trigger: ".fifth-page",
     start: "-10%",
-    end: "100%",
+    end: "150%",
     scrub: true,
     pin: true,
   },
