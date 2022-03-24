@@ -110,7 +110,7 @@ const tlVideo = gsap.timeline({
 tlVideo.fromTo(
   ".product-video",
   { currentTime: 0 },
-  { currentTime: 3, duration: 1.5 }
+  { currentTime: 3, duration: 1 }
 );
 tlVideo.fromTo(
   ".product-info-container h3",
