@@ -7,7 +7,6 @@
 body {
   position: relative;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 a,
 button,
@@ -87,7 +86,7 @@ a {
   flex-direction: column;
   position: relative;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .second-text {
   padding: 5% 30%;
@@ -99,7 +98,7 @@ a {
 .smoke-video {
   position: absolute;
   height: 100%;
-  width: 110vw;
+  width: 100vw;
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
@@ -108,6 +107,7 @@ a {
 .third-page {
   position: relative;
   padding: 0% 20%;
+  overflow-x: hidden;
 }
 .product-text-container {
   display: flex;
@@ -164,6 +164,7 @@ a {
   min-height: 100vh;
   display: flex;
   position: relative;
+  overflow-x: hidden;
 }
 .purchase-left {
   display: flex;
@@ -215,6 +216,7 @@ a {
 .fifth-page {
   min-height: 100vh;
   background: black;
+  overflow-x: hidden;
 }
 .product-video {
   position: absolute;
@@ -301,7 +303,7 @@ footer {
   position: absolute;
   bottom: -5%;
   background: #3056f5;
-  width: 100%;
+  width: 100vw;
   min-height: 6.8vh;
   display: flex;
   justify-content: space-evenly;
@@ -594,3 +596,10 @@ body {
     position: absolute;
   }
 }
+/* fixes */
+/* .gsap-marker-end,
+.gsap-marker-start,
+.gsap-marker-scroller-end,
+.gsap-marker-scroller-start {
+  opacity: 0;
+} */
