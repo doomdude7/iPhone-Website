@@ -130,7 +130,7 @@ const tlParallax = gsap.timeline({
   },
 });
 
-tlParallax.fromTo(".photo-description", { y: 0, x: 0 }, { y: 250, x: 100 });
+tlParallax.fromTo(".photo-description", { y: 0, x: 0 }, { y: 350, x: 100 });
 // tlParallax.fromTo(
 //   ".portrait-container",
 //   { y: 100, x: 0 },

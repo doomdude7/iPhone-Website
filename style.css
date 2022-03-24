@@ -492,23 +492,35 @@ body {
     transform: translate(-10%, 0) scale(0.6);
   }
   .phone-video {
-    left: 5%;
+    left: 20%;
   }
-
   .photo-description {
     left: 10%;
-    top: 70%;
+    top: 80%;
     position: absolute;
+  }
+  /* footer  */
+  footer h1 {
+    font-size: 1rem;
+  }
+  footer a.logo {
+    font-size: 0.7rem;
+  }
+  .up-button {
+    padding: 0.4rem 0.5rem;
+  }
+  .up-button a {
+    font-size: 0.6rem;
   }
 }
 /*=sixth page fix  */
-@media screen and (max-width: 580px) {
+/* @media screen and (max-width: 580px) {
   .photo-description {
     left: 10%;
     top: 60%;
     position: absolute;
   }
-}
+} */
 @media screen and (max-width: 500px) {
   .intro-videos {
     transform: scale(0.5) rotate(90deg) translate(0%, -5%);
@@ -527,7 +539,7 @@ body {
     padding: 0.2rem 0rem;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .nav-links button {
     font-size: 1rem;
@@ -566,13 +578,6 @@ body {
   }
   .purchase-right img {
     transform: translate(-25%, 0) scale(0.6);
-  }
-  /* footer  */
-  footer h1 {
-    font-size: 1rem;
-  }
-  footer a.logo {
-    font-size: 1rem;
   }
   /* sixth page  */
   .photo-subtitle,
