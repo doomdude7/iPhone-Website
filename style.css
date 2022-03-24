@@ -270,7 +270,7 @@ a {
 .portrait {
   height: 65vh;
   position: absolute;
-  left: 50%;
+  left: 40vw;
   bottom: -50vh;
 }
 .photo-title {
@@ -285,6 +285,11 @@ a {
   left: 40%;
   z-index: 2;
   transform: scale(0.75) translate(-40%, 0%);
+}
+.photo-description {
+  top: 20%;
+  left: 50vw;
+  position: absolute;
 }
 .phone-video img,
 .phone-video video {
@@ -342,7 +347,7 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 /* sixth page fix  */
-@media screen and (max-width: 1350px) {
+/* @media screen and (max-width: 1350px) {
   .photo-description {
     left: 50%;
     top: 65%;
@@ -353,7 +358,7 @@ body {
     left: 40vw;
     top: -10%;
   }
-}
+} */
 /* third page fix */
 @media screen and (max-width: 1250px) {
   .product-images {
@@ -381,6 +386,12 @@ body {
   .logo {
     font-size: 1.5rem;
   }
+  .first-page-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .intro-videos {
     transform: scale(0.8);
   }
@@ -392,6 +403,9 @@ body {
   }
   nav a {
     font-size: 0.8rem;
+  }
+  .buy-button {
+    transform: translate(-35%);
   }
   .intro-videos {
     -o-object-fit: cover;
@@ -461,6 +475,9 @@ body {
   .phone-video video {
     transform: scale(0.8);
   }
+  .photo-description {
+    top: 30%;
+  }
 }
 
 /* fifth and first page fix  */
@@ -494,11 +511,7 @@ body {
   .phone-video {
     left: 20%;
   }
-  .photo-description {
-    left: 10%;
-    top: 80%;
-    position: absolute;
-  }
+
   /* footer  */
   footer h1 {
     font-size: 1rem;
@@ -514,13 +527,11 @@ body {
   }
 }
 /*=sixth page fix  */
-/* @media screen and (max-width: 580px) {
+@media screen and (max-width: 580px) {
   .photo-description {
-    left: 10%;
-    top: 60%;
-    position: absolute;
+    top: 30%;
   }
-} */
+}
 @media screen and (max-width: 500px) {
   .intro-videos {
     transform: scale(0.5) rotate(90deg) translate(0%, -5%);
@@ -586,23 +597,24 @@ body {
   }
   .photo-description {
     left: 10%;
-    top: 70%;
-    position: absolute;
+    top: 30%;
   }
 }
 /*=sixth page fix  */
 @media screen and (max-width: 397px) {
   .photo-description {
     left: 0%;
-    top: 59%;
-    position: absolute;
+  }
+  .portrait {
+    left: 65vw;
+  }
+  .phone-video {
+    left: 15%;
   }
 }
 @media screen and (max-width: 360px) {
   .photo-description {
     left: -10%;
-    top: 59%;
-    position: absolute;
   }
 }
 /* fixes */
