@@ -1,0 +1,595 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(12, 12, 12);
+}
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20%;
+  min-height: 6vh;
+  background: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+nav,
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: black;
+}
+.nav-links a,
+.nav-links button {
+  margin-left: 2rem;
+}
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.buy-button {
+  padding: 0.2rem 2rem;
+  font-size: 0.7rem;
+  background: #3056f5;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+/* first page */
+.first-page {
+  height: 100vh;
+  padding: 0% 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.first-page-text {
+  z-index: 2;
+  position: absolute;
+  top: 35vh;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.first-page-title {
+  font-size: 1.5rem;
+}
+.first-page-subtitle {
+  font-size: 3rem;
+}
+.intro-video {
+  position: absolute;
+}
+/* second-page */
+.second-page {
+  min-height: 125vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+}
+.second-text {
+  padding: 5% 30%;
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+}
+.smoke-video {
+  position: absolute;
+  height: 100%;
+  width: 110vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+/* Third page */
+.third-page {
+  position: relative;
+  padding: 0% 20%;
+}
+.product-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0% -15%;
+  min-height: 100vh;
+  color: white;
+}
+.phone-size {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pro-size {
+  text-align: right;
+}
+.max-size {
+  text-align: left;
+}
+.product-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0.9) translate(-50%, -50%);
+}
+.large-phone {
+  position: relative;
+  transform: translateX(30%);
+  z-index: 1;
+}
+.small-phone {
+  position: relative;
+  z-index: 2;
+  transform: translateX(-30%);
+}
+.product-text-right {
+  z-index: 3;
+  color: black;
+}
+.product-text-left {
+  z-index: 3;
+  color: black;
+}
+.retina-line {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -6%);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* fourth page */
+.fourth-page {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+.purchase-left {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  flex: 1;
+}
+.phone-gallery {
+  display: flex;
+  align-self: flex-start;
+}
+.phone-gallery-container {
+  min-width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swatch-container {
+  position: absolute;
+  bottom: 5vh;
+  text-align: center;
+}
+.swatch-container span {
+  margin: 0.2rem;
+  font-size: 0.9rem;
+}
+.swatches img {
+  padding: 0rem 0.8rem;
+  cursor: pointer;
+}
+.purchase-right {
+  flex: 1;
+  position: relative;
+  background: rgb(15, 15, 15);
+}
+.purchase-right img {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0.8);
+  transform-origin: bottom;
+}
+.phone-gallery img {
+  transform: translate(0, -5%) scale(0.8);
+}
+/* fifth page */
+.fifth-page {
+  min-height: 100vh;
+  background: black;
+}
+.product-video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+.product-info-container {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+  padding: 0% 10rem;
+}
+.right-info,
+.left-info {
+  width: 20%;
+}
+.left-info h3,
+.right-info h3 {
+  font-size: 0.8rem;
+  color: rgba(245, 245, 245, 0.808);
+  padding: 3rem 0rem;
+}
+.left-info span,
+.right-info span {
+  color: rgba(245, 245, 245, 0.918);
+  font-size: 1.5rem;
+}
+.blue {
+  z-index: 1;
+}
+/* sixth page */
+.sixth-page {
+  background: white;
+  display: flex;
+  height: 40vh;
+  padding: 10% 20%;
+  justify-content: space-between;
+  position: relative;
+}
+.portrait {
+  height: 65vh;
+  position: absolute;
+  left: 50%;
+  bottom: -50vh;
+}
+.photo-title {
+  font-size: 1.8rem;
+}
+.photo-subtitle {
+  font-size: 3rem;
+}
+.phone-video {
+  position: absolute;
+  bottom: -50vh;
+  left: 40%;
+  z-index: 2;
+  transform: scale(0.75) translate(-40%, 0%);
+}
+.phone-video img,
+.phone-video video {
+  position: absolute;
+}
+.phone-video img {
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+}
+.phone-video video {
+  left: 1rem;
+  bottom: 1rem;
+  transform: scale(0.82);
+  border-radius: 3rem;
+}
+footer {
+  padding: 1rem;
+  position: absolute;
+  bottom: -5%;
+  background: #3056f5;
+  width: 100%;
+  min-height: 6.8vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer a,
+footer h1 {
+  color: white;
+}
+footer h1 {
+  font-size: 1.5rem;
+}
+.up-button {
+  padding: 0.5rem 1.5rem;
+  background: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.up-button a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #3056f5;
+  cursor: pointer;
+}
+/* scrollbar fix */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* sixth page fix  */
+@media screen and (max-width: 1350px) {
+  .photo-description {
+    left: 50%;
+    top: 65%;
+    position: absolute;
+  }
+  .portrait {
+    position: absolute;
+    left: 40vw;
+    top: -10%;
+  }
+}
+/* third page fix */
+@media screen and (max-width: 1250px) {
+  .product-images {
+    display: flex;
+    flex-direction: row;
+    top: 40%;
+  }
+  .product-text-right {
+    position: absolute;
+    left: 15%;
+  }
+  .product-text-left {
+    position: absolute;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* first page */
+  .first-page {
+    padding: 0 0;
+    width: 100vw;
+    overflow: visible;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .intro-videos {
+    transform: scale(0.8);
+  }
+  nav {
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  nav a {
+    font-size: 0.8rem;
+  }
+  .intro-videos {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  nav {
+    padding: 0 0;
+  }
+  /* 2nd page */
+  .second-text {
+    text-align: start;
+    width: 100%;
+  }
+  .text-container {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .phone-title {
+    text-shadow: 3px 3px 3px black;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px black;
+    color: white;
+  }
+  .phone-size {
+    text-shadow: 3px 3px 3px black;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 3.5rem;
+  }
+  /* third page */
+
+  .product-text-right {
+    width: 20vw;
+    left: 0%;
+  }
+  .product-text-left {
+    width: 20vw;
+    right: 0%;
+  }
+  /* fourth page */
+  .phone-gallery-container img {
+    transform: scale(0.6);
+  }
+  .purchase-right img {
+    transform: translate(-20%, 0) scale(0.6);
+  }
+  .fourth-page {
+    width: 100vw;
+  }
+  /* sixth page  */
+  .photo-subtitle,
+  .photo-title {
+    font-size: 1.5rem;
+  }
+  .portrait {
+    position: absolute;
+    transform: scale(0.8);
+    left: 50vw;
+    top: -35%;
+  }
+  .photo-description {
+    left: 20%;
+    top: 65%;
+    position: absolute;
+  }
+  .phone-video img,
+  .phone-video video {
+    transform: scale(0.8);
+  }
+}
+
+/* fifth and first page fix  */
+@media screen and (max-width: 800px) {
+  .intro-videos {
+    transform: scale(0.6) rotate(90deg) translate(-8%, 20%);
+  }
+  .product-info-container {
+    justify-content: space-between;
+    padding: 0% 1rem;
+  }
+  .right-info,
+  .left-info {
+    width: 40%;
+  }
+}
+/* first page fix  */
+@media screen and (max-width: 760px) {
+  .intro-videos {
+    transform: scale(0.6) rotate(90deg) translate(0%, 12%);
+  }
+}
+/* first, fourth and sixth page fix  */
+@media screen and (max-width: 650px) {
+  .intro-videos {
+    transform: scale(0.6) rotate(90deg) translate(0%, 5%);
+  }
+  .phone-gallery-container img {
+    transform: translate(-10%, 0) scale(0.6);
+  }
+  .phone-video {
+    left: 5%;
+  }
+
+  .photo-description {
+    left: 10%;
+    top: 70%;
+    position: absolute;
+  }
+}
+/*=sixth page fix  */
+@media screen and (max-width: 580px) {
+  .photo-description {
+    left: 10%;
+    top: 60%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-videos {
+    transform: scale(0.5) rotate(90deg) translate(0%, -5%);
+  }
+  .first-page-text {
+    text-align: none;
+    top: 20%;
+    left: 30%;
+    padding: 3rem;
+  }
+  .first-page-title,
+  .first-page-subtitle {
+    font-size: 3rem;
+  }
+  nav a {
+    padding: 0.2rem 0rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links button {
+    font-size: 1rem;
+  }
+  .phone-title {
+    font-size: 1.5rem;
+  }
+  /* second page */
+  .second-page {
+    min-height: 100vh;
+  }
+  /* thrid page  */
+  .product-images img {
+    transform: scale(0.7);
+  }
+  .phone-title {
+    font-size: 1.5rem;
+  }
+  .phone-size {
+    text-shadow: 2px 2px 2px black;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 2.5rem;
+  }
+  .retina-line {
+    text-align: center;
+  }
+  .product-images {
+    left: 40%;
+  }
+  /* fourth page  */
+  .phone-gallery-container img {
+    transform: translate(-20%, 0) scale(0.6);
+  }
+  .swatch-container span {
+    font-size: 0.7rem;
+  }
+  .purchase-right img {
+    transform: translate(-25%, 0) scale(0.6);
+  }
+  /* footer  */
+  footer h1 {
+    font-size: 1rem;
+  }
+  footer a.logo {
+    font-size: 1rem;
+  }
+  /* sixth page  */
+  .photo-subtitle,
+  .photo-title {
+    font-size: 1.5rem;
+  }
+  .photo-description {
+    left: 10%;
+    top: 70%;
+    position: absolute;
+  }
+}
+/*=sixth page fix  */
+@media screen and (max-width: 397px) {
+  .photo-description {
+    left: 0%;
+    top: 59%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 360px) {
+  .photo-description {
+    left: -10%;
+    top: 59%;
+    position: absolute;
+  }
+}
