@@ -101,8 +101,8 @@ swatches.forEach((swatch, index) => {
 const tlVideo = gsap.timeline({
   scrollTrigger: {
     trigger: ".fifth-page",
-    start: "0%",
-    end: "200%",
+    start: "-2%",
+    end: "150%",
     scrub: true,
     pin: true,
   },
